@@ -15,6 +15,7 @@ import { useHomeStyles } from "../Styles/useHomeStyles";
 import { RedesignButtonPrimary } from "../ui-kit/RedesignButtonPrimary";
 import ResponsiveJumpButtonGroup from "../Components/ResponsiveJumpButtonGroup";
 import { useDocumentTitle } from "../Components/customHooks/useDocumentTitle";
+import CalcSharebtn from "../Components/CalcSharebtn";
 
 const HomePage = () => {
     useEffect(() => trackPageview("Home"), []);
@@ -36,6 +37,7 @@ const HomePage = () => {
                                 conviction for free in less than 10 minutes!
                             </Typography>
                             <Box paddingTop={12}>
+                                <CalcSharebtn />
                                 <Button variant="contained" color="secondary" href="/calculator/landing-0" fullWidth>
                                     Access Calculator
                                 </Button>
